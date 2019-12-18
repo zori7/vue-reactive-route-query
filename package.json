@@ -1,0 +1,22 @@
+{
+  "name": "vue-reactive-route-query",
+  "version": "0.1.0",
+  "description": "Make Vue Router data<->query binding easier",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zori7/vue-reactive-route-query.git"
+  },
+  "author": "Zori Yeghikyan",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/zori7/vue-reactive-route-query/issues"
+  },
+  "homepage": "https://github.com/zori7/vue-reactive-route-query#readme",
+  "dependencies": {
+    "lodash.hasin": "^4.5.2"
+  }
+}
