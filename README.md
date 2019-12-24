@@ -1,6 +1,8 @@
 # vue-reactive-route-query
 Make Vue Router data&lt;->query binding easier
 
+**Demo:** https://zori7.github.io/reactive-query-demo
+
 ## Installation
 `npm i vue-reactive-route-query`
 
