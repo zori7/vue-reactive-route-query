@@ -1,14 +1,11 @@
-import hasIn from 'lodash.hasin'
-
 export default function createWatchQuery (propName, setter = null) {
     return {
         created () {
-            if (hasIn(this._computedWatchers, propName)) {
+            if (this.hasOwnProperty('_computedWatchers') && propName in this._computedWatchers) {
                 setter = setter || 'set' + propName.replace(/^\w/, letter => letter.toUpperCase())
                 if (!this.hasOwnProperty(setter))
                     throw new Error('Please specify a valid setter')
-            }
-            else if (!hasIn(this, propName))
+            } else if (!(propName in this._data))
                 throw new Error('Property "' + propName + '" does not exist in data or computed properties')
 
             if (this.$route.query[propName]) {

@@ -7,7 +7,9 @@
     "query",
     "vue router",
     "query binding",
-    "reactive query"
+    "reactive query",
+    "url",
+    "v-model query"
   ],
   "main": "index.js",
   "scripts": {
@@ -23,7 +25,8 @@
     "url": "https://github.com/zori7/vue-reactive-route-query/issues"
   },
   "homepage": "https://github.com/zori7/vue-reactive-route-query#readme",
-  "dependencies": {
-    "lodash.hasin": "^4.5.2"
+  "peerDependencies": {
+    "vue": "^2.6.11",
+    "vue-router": "^3.1.3"
   }
 }
